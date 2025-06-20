@@ -301,20 +301,11 @@ const CreateEvent = ({ isEditing = false }) => {
 
       // Handle image file upload
       if (imageFile) {
-        // In a real implementation, we would upload to a server/cloud storage
-        // For now, we'll use a more appropriate placeholder image with a unique ID
-        // instead of using the filename as text which causes loading issues
-        
-        // Generate a more appropriate image placeholder 
-        // In a real app, this would be replaced with actual image upload code
-        
-        // Option 1: Use a sample image based on category instead of the filename
+     
         const categoryImage = getCategoryImage(eventData.category);
         eventData.image = categoryImage;
         
-        // Option 2: For demo purposes only - use an actual image service 
-        // This would be replaced with your actual upload code in production
-        // eventData.image = `https://picsum.photos/800/400?random=${Date.now()}`;
+       
       }
       
       // Set default image if none provided
@@ -506,7 +497,7 @@ const CreateEvent = ({ isEditing = false }) => {
             </div>
             
             <div className="form-group">
-              <label htmlFor="ticketPrice">Ticket Price ($) <span className="required">*</span></label>
+              <label htmlFor="ticketPrice">Ticket Price (₹) <span className="required">*</span></label>
               <input
                 type="number"
                 id="ticketPrice"
