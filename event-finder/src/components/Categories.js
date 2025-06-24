@@ -1,4 +1,3 @@
-// client/src/components/Categories.js
 import React, { useState, useEffect } from 'react';
 import { getCategories } from '../services/eventService';
 

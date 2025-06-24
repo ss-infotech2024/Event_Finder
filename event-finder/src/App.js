@@ -35,16 +35,20 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/home" element={
             <ProtectedRoute>
+             
               <Home />
             </ProtectedRoute>
+            
           } />
           <Route path="/create-event" element={
             <ProtectedRoute>
               <CreateEvent />
+           
             </ProtectedRoute>
           } />
           <Route path="/events/:id" element={
             <ProtectedRoute>
+        
               <EventDetails />
             </ProtectedRoute>
           } />

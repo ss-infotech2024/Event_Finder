@@ -1,6 +1,7 @@
-// client/src/components/EventCard.js
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import '../styles/EventCard.css';
+import EventCard from './EventCard';
 
 const EventCard = ({ event }) => {
   const navigate = useNavigate();

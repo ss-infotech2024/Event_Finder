@@ -7,6 +7,7 @@ import { getEvents, getTrendingEvents, getRecommendedEvents } from '../services/
 import { getEventId } from '../utils/idUtils';
 import { processEventsWithImages } from '../utils/imageUtils';
 import ImageWithFallback from '../components/ImageWithFallback';
+import Hero from '../components/Hero';
 
 const Home = () => {
   const { user, logout } = useContext(AuthContext);
@@ -245,6 +246,7 @@ const Home = () => {
   
   return (
     <div className="home-container">
+         
       <nav className="navbar">
         <div className="nav-container">
           <Link to="/home" className="nav-logo">Event Finder</Link>
@@ -272,6 +274,7 @@ const Home = () => {
                   onChange={(e) => setDateFilter(e.target.value)}
                 />
               </div>
+        
               
               <div className="filter-group">
                 <label className="filter-label">Location</label>
@@ -318,7 +321,7 @@ const Home = () => {
           </div>
         </div>
       </nav>
-      
+       <Hero/>
       <main className="main-content">
         <section>
           <h2 className="section-title">Categories</h2>

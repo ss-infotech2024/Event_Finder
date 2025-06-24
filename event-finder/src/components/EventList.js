@@ -1,6 +1,4 @@
-// client/src/components/EventList.js
 import React from 'react';
-import EventCard from './EventCard';
 
 const EventList = ({ title, events, loading, error }) => {
   if (loading) return <div className="loading">Loading events...</div>;
