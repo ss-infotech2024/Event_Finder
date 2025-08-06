@@ -14,7 +14,7 @@ export const AuthProvider = ({ children }) => {
   const navigate = useNavigate();
   
   // Configure axios
-  axios.defaults.baseURL = 'http://localhost:5000/api';
+  axios.defaults.baseURL = 'https://event-finder-backend-4qye.onrender.com/api';
   axios.defaults.withCredentials = true; // Enable sending cookies with requests
   
   // Set auth token in axios headers

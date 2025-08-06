@@ -1,6 +1,6 @@
 # Event Finder
 
-Event Finder is a full-stack web application that allows users to discover, create, and manage events. 
+Event Finder is a full-stack web application that allows users to discover, create, and manage events.
 
 ## Features
 
@@ -15,6 +15,7 @@ Event Finder is a full-stack web application that allows users to discover, crea
 ## Technology Stack
 
 ### Frontend
+
 - React
 - React Router
 - Axios for API requests
@@ -22,6 +23,7 @@ Event Finder is a full-stack web application that allows users to discover, crea
 - Custom CSS for styling
 
 ### Backend
+
 - Node.js
 - Express.js
 - MongoDB with Mongoose
@@ -54,24 +56,28 @@ server-side/            # Backend Node.js application
 ## Setup Instructions
 
 ### Prerequisites
+
 - Node.js (v14 or higher)
 - MongoDB
 
 ### Installation
 
 1. Clone the repository:
+
    ```
    git clone https://github.com/SyedTanseer/Event-Finder.git
    cd Event-Finder
    ```
 
 2. Install backend dependencies:
+
    ```
    cd server-side
    npm install
    ```
 
 3. Install frontend dependencies:
+
    ```
    cd ../event-finder
    npm install
@@ -87,27 +93,31 @@ server-side/            # Backend Node.js application
 ### Running the Application
 
 1. Start the backend server:
+
    ```
    cd server-side
    npm start
    ```
 
 2. Start the frontend development server:
+
    ```
    cd ../event-finder
    npm start
    ```
 
-3. Open your browser and navigate to `http://localhost:3000`
+3. Open your browser and navigate to `https://event-finder-backend-4qye.onrender.com`
 
 ## API Endpoints
 
 ### Authentication
+
 - `POST /api/auth/register` - Register a new user
 - `POST /api/auth/login` - Login a user
 - `GET /api/auth/user` - Get authenticated user data
 
 ### Events
+
 - `GET /api/events` - Get all events (with optional filters)
 - `GET /api/events/trending` - Get trending events
 - `GET /api/events/recommended` - Get recommended events
@@ -118,4 +128,4 @@ server-side/            # Backend Node.js application
 
 ## License
 
-This project is licensed under the MIT License. 
+This project is licensed under the MIT License.
